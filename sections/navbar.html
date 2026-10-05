@@ -1,0 +1,48 @@
+<!-- ==========================================================================
+     NAVBAR SECTION
+     Chỉnh sửa logo thương hiệu, các liên kết menu và nút hành động
+     ========================================================================== -->
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="#hero" class="nav-brand">
+      <span class="brand-badge">&lt;VN /&gt;</span>
+      <span>VĂN NHẤT</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-i18n="navAbout">Giới thiệu</a></li>
+        <li><a href="#console" class="nav-link">Terminal</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="navSkills">Kỹ năng</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="navProjects">Dự án</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="navExp">Kinh nghiệm</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="navContact">Liên hệ</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Sound Toggle -->
+      <button class="icon-btn" id="sound-toggle-btn" title="Bật/Tắt hiệu ứng âm thanh">
+        <svg id="sound-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"/>
+        </svg>
+      </button>
+
+      <!-- Language Switcher -->
+      <div class="lang-switch">
+        <button class="lang-btn active" id="lang-vi-btn">VI</button>
+        <button class="lang-btn" id="lang-en-btn">EN</button>
+      </div>
+
+      <!-- CV Modal Trigger -->
+      <button class="btn btn-secondary btn-sm open-cv-btn" data-i18n="cvBtn">
+        📄 Xem CV
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+    </div>
+  </div>
+</header>

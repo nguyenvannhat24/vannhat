@@ -1,0 +1,90 @@
+<!-- ==========================================================================
+     TERMINAL & DEVELOPER CONSOLE SECTION
+     Chỉnh sửa các tab code mẫu và lệnh dòng lệnh CLI
+     ========================================================================== -->
+<section class="section-console" id="console">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// INTERACTIVE ENVIRONMENT</span>
+      <h2 class="section-title">Khám phá qua Developer Console</h2>
+      <p class="section-subtitle">Chuyển đổi file hoặc gõ lệnh trực tiếp vào terminal bên dưới để tương tác với hồ sơ của tôi.</p>
+    </div>
+
+    <div class="terminal-wrapper">
+      <div class="terminal-header">
+        <div class="terminal-controls">
+          <span class="term-dot term-red"></span>
+          <span class="term-dot term-yellow"></span>
+          <span class="term-dot term-green"></span>
+        </div>
+
+        <div class="terminal-tabs">
+          <button class="term-tab active" data-target="tab-dev">developer.ts</button>
+          <button class="term-tab" data-target="tab-skills">skills.json</button>
+          <button class="term-tab" data-target="tab-arch">architecture.yaml</button>
+        </div>
+
+        <div class="terminal-actions">
+          <span>bash: ~</span>
+        </div>
+      </div>
+
+      <div class="terminal-body">
+        <!-- Tab 1: developer.ts -->
+        <div class="terminal-content active" id="tab-dev">
+          <div><span class="code-comment">// Hồ sơ năng lực kỹ thuật Nguyễn Văn Nhất</span></div>
+          <div><span class="code-keyword">interface</span> <span class="code-fn">EngineerProfile</span> {</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">name</span>: <span class="code-string">'Nguyễn Văn Nhất'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">role</span>: <span class="code-string">'Senior Full-Stack & Cloud Architect'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">email</span>: <span class="code-string">'nhatx5xxx@gmail.com'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">education</span>: <span class="code-string">'CMC University (Graduated with Distinction / Loại Giỏi)'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">passion</span>: [<span class="code-string">'High Performance Systems'</span>, <span class="code-string">'Clean Code'</span>, <span class="code-string">'Generative AI'</span>];</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">status</span>: <span class="code-string">'Open for High-Impact Roles'</span>;</div>
+          <div>}</div>
+          <br>
+          <div><span class="code-keyword">export const</span> <span class="code-fn">getPhilosophy</span> = (): <span class="code-fn">string</span> => {</div>
+          <div style="padding-left: 1.5rem;"><span class="code-keyword">return</span> <span class="code-string">'“Code không chỉ để máy tính hiểu, mà còn phải thanh lịch để đồng đội cùng phát triển.”'</span>;</div>
+          <div>};</div>
+        </div>
+
+        <!-- Tab 2: skills.json -->
+        <div class="terminal-content" id="tab-skills">
+          <pre style="color: #cbd5e1; font-family: var(--font-mono);">
+{
+  <span class="code-prop">"frontend"</span>: ["React 19", "Next.js 14", "TypeScript", "Tailwind CSS", "Vue 3"],
+  <span class="code-prop">"backend"</span>: ["Node.js", "NestJS", "Golang (Gin/Fiber)", "FastAPI", "gRPC"],
+  <span class="code-prop">"databases"</span>: ["PostgreSQL", "Redis", "MongoDB", "ClickHouse", "Elasticsearch"],
+  <span class="code-prop">"cloud_devops"</span>: ["AWS (ECS, Lambda, S3, RDS)", "Docker", "Kubernetes", "CI/CD Actions"],
+  <span class="code-prop">"ai_tooling"</span>: ["OpenAI API", "LangChain", "Vector DBs (Pinecone/Milvus)", "RAG Architecture"]
+}
+          </pre>
+        </div>
+
+        <!-- Tab 3: architecture.yaml -->
+        <div class="terminal-content" id="tab-arch">
+          <pre style="color: #cbd5e1; font-family: var(--font-mono);">
+<span class="code-comment"># Chiến lược thiết kế hệ thống sản phẩm</span>
+<span class="code-prop">system_design</span>:
+  <span class="code-prop">api_gateway</span>: Envoy / Cloudflare Edge
+  <span class="code-prop">frontend_layer</span>: Edge Caching + Next.js Server Components
+  <span class="code-prop">microservices</span>:
+    - <span class="code-prop">auth_service</span>: OAuth2 + JWT (Golang)
+    - <span class="code-prop">ai_engine</span>: Python Async FastAPI + Celery Queue
+    - <span class="code-prop">data_pipeline</span>: Apache Kafka + TimescaleDB
+  <span class="code-prop">monitoring</span>: Prometheus + Grafana + OpenTelemetry
+  <span class="code-prop">reliability</span>: 99.99% SLA with automated multi-zone failover
+          </pre>
+        </div>
+
+        <!-- Output of commands -->
+        <div id="terminal-cli-output" style="margin-top: 1rem;"></div>
+
+        <!-- CLI Prompt -->
+        <div class="term-cli-prompt">
+          <span>guest@vannhat-dev:~$</span>
+          <input type="text" id="terminal-cli-input" class="term-cli-input" placeholder="Gõ lệnh (thử: help, skills, projects, contact, neofetch, clear)..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

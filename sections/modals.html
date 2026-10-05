@@ -1,0 +1,70 @@
+<!-- ==========================================================================
+     MODALS SECTION
+     Modal xem chi tiết dự án & Modal Curriculum Vitae (CV) cá nhân
+     ========================================================================== -->
+
+<!-- MODAL: CHI TIẾT DỰ ÁN & KIẾN TRÚC HỆ THỐNG -->
+<div class="modal-backdrop" id="project-modal">
+  <div class="modal-container">
+    <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+    <div class="modal-body" id="project-modal-body">
+      <!-- Nội dung được nạp tự động qua main.js khi người dùng click vào dự án -->
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: HỒ SƠ ỨNG TUYỂN / BẢN XEM TRƯỚC CV -->
+<div class="modal-backdrop" id="cv-modal">
+  <div class="modal-container" style="max-width: 840px;">
+    <button class="modal-close-btn" id="cv-modal-close-btn" aria-label="Close CV modal">✕</button>
+    <div class="modal-body">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 1.25rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.8rem; color: #fff;">Nguyễn Văn Nhất</h2>
+          <div style="color: var(--accent-cyan); font-family: var(--font-mono); font-weight: 600;">Senior Full-Stack Engineer & Cloud Solutions Architect</div>
+          <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">Email: nhatx5xxx@gmail.com | Phone: +84 987 654 321</div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button onclick="window.print()" class="btn btn-secondary btn-sm">
+            🖨️ In / Xuất PDF
+          </button>
+          <a href="mailto:nhatx5xxx@gmail.com" class="btn btn-primary btn-sm">
+            ✉️ Tuyển dụng
+          </a>
+        </div>
+      </div>
+
+      <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">// Tóm tắt năng lực (Executive Summary)</h4>
+          <p>
+            Kỹ sư phần mềm cao cấp với hơn 5 năm kinh nghiệm chuyên sâu trong việc thiết kế kiến trúc phân tán chịu tải lớn, xây dựng web application hiệu năng cao với React/Next.js và tối ưu hóa backend vi dịch vụ với Golang, Node.js và hạ tầng Cloud AWS/Kubernetes. Có năng lực đã được chứng minh trong việc lãnh đạo kỹ thuật và áp dụng GenAI vào sản phẩm thực tế.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">// Kỹ năng chuyên môn cốt lõi</h4>
+          <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+            <li><strong>Frontend:</strong> React 19, Next.js 14, TypeScript, Vue 3, Tailwind CSS, Responsive Design, State Management (Zustand, Redux).</li>
+            <li><strong>Backend:</strong> Golang, Node.js (NestJS, Express), Python (FastAPI), RESTful API, gRPC, GraphQL.</li>
+            <li><strong>Database & Storage:</strong> PostgreSQL, Redis, MongoDB, ClickHouse, TimescaleDB, ElasticSearch.</li>
+            <li><strong>Cloud & DevOps:</strong> Docker, Kubernetes, AWS (ECS, Lambda, RDS, S3), CI/CD (GitHub Actions), Terraform.</li>
+            <li><strong>AI Engineering:</strong> RAG Architecture, LangChain, Vector Databases (Pinecone, pgvector), LLM Fine-tuning & Prompt Engineering.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">// Học vấn & Chứng chỉ Quốc tế</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+            <div>
+              <strong>Trường Đại học CMC (CMC University)</strong> - Cử nhân Công nghệ Thông tin (<span style="color: var(--accent-emerald); font-weight: 700;">Tốt nghiệp loại Giỏi</span>)
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.88rem;">
+              Chứng chỉ: AWS Certified Solutions Architect - Associate | CKAD (Certified Kubernetes Application Developer)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
