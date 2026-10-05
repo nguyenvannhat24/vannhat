@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resLine.innerHTML = `🚀 1. Neuralytik AI Platform | 2. Aetheris Luxury E-Commerce | 3. CryptoQuant Web3 FinTech`;
         break;
       case 'contact':
-        resLine.innerHTML = `📬 Email: nhatx5xxx@gmail.com | GitHub: github.com/nhatx5xxx | Zalo/Telegram: @vannhat_dev`;
+        resLine.innerHTML = `📬 Email: nhatx5xxx@gmail.com | GitHub: github.com/nguyenvannhat24 | Zalo/Telegram: @vannhat_dev`;
         break;
       case 'about':
         resLine.innerHTML = `👨‍💻 Nguyễn Văn Nhất - Tốt nghiệp loại Giỏi trường Đại học CMC, Senior Full-stack Engineer & Solutions Architect với 5+ năm phát triển hệ thống chịu tải cao & tích hợp AI.`;

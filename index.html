@@ -1,241 +1,232 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nguyễn Văn Nhất | Senior Full-Stack Engineer & Cloud Architect</title>
-  <meta name="description"
-    content="Portfolio chuyên nghiệp của Nguyễn Văn Nhất - Senior Full-Stack Engineer & Cloud Solutions Architect với 5+ năm kinh nghiệm trong hệ thống vi dịch vụ, Next.js, Node.js, Go và tích hợp AI.">
-  <meta name="keywords"
-    content="Văn Nhất, Software Engineer, Full-Stack Developer, Cloud Architect, Next.js, TypeScript, Golang, AI Developer">
+  <meta name="description" content="Portfolio chuyên nghiệp của Nguyễn Văn Nhất - Tốt nghiệp loại Giỏi Đại học CMC, Senior Full-Stack Engineer & Cloud Solutions Architect với 5+ năm kinh nghiệm vi dịch vụ và AI.">
+  <meta name="keywords" content="Nguyễn Văn Nhất, Văn Nhất, Đại học CMC, Software Engineer, Full-Stack Developer, Cloud Architect, Next.js, TypeScript, Golang, AI Developer">
   <meta name="author" content="Nguyễn Văn Nhất">
 
   <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Nguyễn Văn Nhất | Senior Full-Stack Engineer">
-  <meta property="og:description"
-    content="Kiến tạo phần mềm hiệu năng cao, vi dịch vụ chịu tải lớn và giải pháp AI tiên tiến.">
+  <meta property="og:description" content="Kiến tạo phần mềm hiệu năng cao, vi dịch vụ chịu tải lớn và giải pháp AI tiên tiến.">
   <meta property="og:image" content="assets/images/avatar.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2307090e'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='900' font-size='42' fill='%2300f2fe'>&lt;VN/&gt;</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2307090e'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='900' font-size='42' fill='%2300f2fe'>&lt;VN/&gt;</text></svg>">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
   <!-- Background Particle Constellation Canvas -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- ==========================================================================
-       NAVBAR
-       ========================================================================== -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="nav-brand">
-        <span class="brand-badge">&lt;VN /&gt;</span>
-        <span>VĂN NHẤT</span>
-      </a>
+  
+  <!-- SECTION: navbar.html -->
+<!-- ==========================================================================
+     NAVBAR SECTION
+     Chỉnh sửa logo thương hiệu, các liên kết menu và nút hành động
+     ========================================================================== -->
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="#hero" class="nav-brand">
+      <span class="brand-badge">&lt;VN /&gt;</span>
+      <span>VĂN NHẤT</span>
+    </a>
 
-      <nav>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about" class="nav-link" data-i18n="navAbout">Giới thiệu</a></li>
-          <li><a href="#console" class="nav-link">Terminal</a></li>
-          <li><a href="#skills" class="nav-link" data-i18n="navSkills">Kỹ năng</a></li>
-          <li><a href="#projects" class="nav-link" data-i18n="navProjects">Dự án</a></li>
-          <li><a href="#experience" class="nav-link" data-i18n="navExp">Kinh nghiệm</a></li>
-          <li><a href="#contact" class="nav-link" data-i18n="navContact">Liên hệ</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-i18n="navAbout">Giới thiệu</a></li>
+        <li><a href="#console" class="nav-link">Terminal</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="navSkills">Kỹ năng</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="navProjects">Dự án</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="navExp">Kinh nghiệm</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="navContact">Liên hệ</a></li>
+      </ul>
+    </nav>
 
-      <div class="nav-actions">
-        <!-- Sound Toggle -->
-        <button class="icon-btn" id="sound-toggle-btn" title="Bật/Tắt hiệu ứng âm thanh">
-          <svg id="sound-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6" />
-          </svg>
+    <div class="nav-actions">
+      <!-- Sound Toggle -->
+      <button class="icon-btn" id="sound-toggle-btn" title="Bật/Tắt hiệu ứng âm thanh">
+        <svg id="sound-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"/>
+        </svg>
+      </button>
+
+      <!-- Language Switcher -->
+      <div class="lang-switch">
+        <button class="lang-btn active" id="lang-vi-btn">VI</button>
+        <button class="lang-btn" id="lang-en-btn">EN</button>
+      </div>
+
+      <!-- CV Modal Trigger -->
+      <button class="btn btn-secondary btn-sm open-cv-btn" data-i18n="cvBtn">
+        📄 Xem CV
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- SECTION: hero.html -->
+<!-- ==========================================================================
+     HERO SECTION
+     Chỉnh sửa tiêu đề mở đầu, họ tên, mô tả ngắn, số liệu thống kê & avatar
+     ========================================================================== -->
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <!-- Cột trái: Thông tin giới thiệu & Kêu gọi hành động -->
+    <div class="hero-content">
+      <div class="hero-badge-wrap">
+        <span class="status-dot"></span>
+        <span data-i18n="statusBadge">🟢 Đang sẵn sàng nhận dự án mới & Hợp tác</span>
+      </div>
+
+      <h1 class="hero-title">
+        Xin chào, tôi là <br>
+        <span class="gradient-text">Nguyễn Văn Nhất</span>
+      </h1>
+
+      <div class="hero-subtitle-box">
+        <span id="hero-typed-text"></span>
+        <span class="typed-cursor"></span>
+      </div>
+
+      <p class="hero-desc" data-i18n="heroDesc">
+        Hơn 5 năm kinh nghiệm thực chiến kiến tạo hệ thống phần mềm quy mô lớn, vi dịch vụ chịu tải cao và ứng dụng web hiện đại. Đam mê tối ưu hóa hiệu năng, kiến trúc microservices và ứng dụng giải pháp Trí tuệ nhân tạo (AI/LLM) vào thực tiễn doanh nghiệp.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary" data-i18n="ctaProjects">
+          Khám phá Dự án 🚀
+        </a>
+        <a href="#contact" class="btn btn-secondary" data-i18n="ctaContact">
+          Liên hệ hợp tác 💬
+        </a>
+        <button class="btn btn-secondary open-cv-btn">
+          Tải CV (PDF) 📥
         </button>
+      </div>
 
-        <!-- Language Switcher -->
-        <div class="lang-switch">
-          <button class="lang-btn active" id="lang-vi-btn">VI</button>
-          <button class="lang-btn" id="lang-en-btn">EN</button>
+      <!-- Bộ đếm chỉ số thực tế -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="5" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="statExp">Năm kinh nghiệm</span>
         </div>
-
-        <!-- CV Modal Trigger -->
-        <button class="btn btn-secondary btn-sm open-cv-btn" data-i18n="cvBtn">
-          📄 Xem CV
-        </button>
-
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
-          ☰
-        </button>
+        <div class="stat-item">
+          <span class="stat-number" data-target="40" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="statProjects">Dự án triển khai</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="99.9" data-suffix="%">0%</span>
+          <span class="stat-label" data-i18n="statUptime">Uptime hệ thống</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1" data-suffix="M+">0M+</span>
+          <span class="stat-label" data-i18n="statUsers">Người dùng phục vụ</span>
+        </div>
       </div>
     </div>
-  </header>
 
-  <!-- ==========================================================================
-       HERO SECTION
-       ========================================================================== */
-  -->
-  <section class="hero" id="hero">
-    <div class="container hero-grid">
-      <!-- Left Content -->
-      <div class="hero-content">
-        <div class="hero-badge-wrap">
-          <span class="status-dot"></span>
-          <span data-i18n="statusBadge">🟢 Đang sẵn sàng nhận dự án mới & Hợp tác</span>
-        </div>
-
-        <h1 class="hero-title">
-          Xin chào, tôi là <br>
-          <span class="gradient-text">Nguyễn Văn Nhất</span>
-        </h1>
-
-        <div class="hero-subtitle-box">
-          <span id="hero-typed-text"></span>
-          <span class="typed-cursor"></span>
-        </div>
-
-        <p class="hero-desc" data-i18n="heroDesc">
-          Hơn 5 năm kinh nghiệm thực chiến kiến tạo hệ thống phần mềm quy mô lớn, vi dịch vụ chịu tải cao và ứng dụng
-          web hiện đại. Đam mê tối ưu hóa hiệu năng, kiến trúc microservices và ứng dụng giải pháp Trí tuệ nhân tạo
-          (AI/LLM) vào thực tiễn doanh nghiệp.
-        </p>
-
-        <div class="hero-cta-group">
-          <a href="#projects" class="btn btn-primary" data-i18n="ctaProjects">
-            Khám phá Dự án 🚀
-          </a>
-          <a href="#contact" class="btn btn-secondary" data-i18n="ctaContact">
-            Liên hệ hợp tác 💬
-          </a>
-          <button class="btn btn-secondary open-cv-btn">
-            Tải CV (PDF) 📥
-          </button>
-        </div>
-
-        <!-- Live Stats Counter -->
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number" data-target="5" data-suffix="+">0+</span>
-            <span class="stat-label" data-i18n="statExp">Năm kinh nghiệm</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="40" data-suffix="+">0+</span>
-            <span class="stat-label" data-i18n="statProjects">Dự án triển khai</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="99.9" data-suffix="%">0%</span>
-            <span class="stat-label" data-i18n="statUptime">Uptime hệ thống</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="1" data-suffix="M+">0M+</span>
-            <span class="stat-label" data-i18n="statUsers">Người dùng phục vụ</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Visual (Avatar with 3D Holographic Card & Badges) -->
-      <div class="hero-visual">
-        <div class="avatar-wrapper">
-          <div class="avatar-inner">
-            <img src="assets/images/image.png" alt="Nguyễn Văn Nhất - Software Engineer" class="avatar-img">
-            <div class="avatar-overlay"></div>
-            <div class="avatar-caption">
-              <div>
-                <div class="caption-name">Nguyễn Văn Nhất</div>
-                <div class="caption-role">&lt;Lead Full-Stack /&gt;</div>
-              </div>
-              <div style="font-size: 1.5rem;">⚡</div>
+    <!-- Cột phải: Thẻ Avatar 3D & Huy hiệu công nghệ -->
+    <div class="hero-visual">
+      <div class="avatar-wrapper">
+        <div class="avatar-inner">
+          <img src="assets/images/image.png" alt="Nguyễn Văn Nhất - Software Engineer" class="avatar-img">
+          <div class="avatar-overlay"></div>
+          <div class="avatar-caption">
+            <div>
+              <div class="caption-name">Nguyễn Văn Nhất</div>
+              <div class="caption-role">&lt;Lead Full-Stack /&gt;</div>
             </div>
+            <div style="font-size: 1.5rem;">⚡</div>
           </div>
+        </div>
 
-          <!-- Floating Badges -->
-          <div class="floating-badge badge-react">
-            <span>⚛️</span>
-            <span>React / Next.js 14</span>
-          </div>
+        <!-- Floating Badges -->
+        <div class="floating-badge badge-react">
+          <span>⚛️</span>
+          <span>React / Next.js 14</span>
+        </div>
 
-          <div class="floating-badge badge-node">
-            <span>🚀</span>
-            <span>Golang & Node.js</span>
-          </div>
+        <div class="floating-badge badge-node">
+          <span>🚀</span>
+          <span>Golang & Node.js</span>
+        </div>
 
-          <div class="floating-badge badge-ai">
-            <span>🧠</span>
-            <span>AI / LLM Integration</span>
-          </div>
+        <div class="floating-badge badge-ai">
+          <span>🧠</span>
+          <span>AI / LLM Integration</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ==========================================================================
-       INTERACTIVE TERMINAL / CODE CONSOLE SECTION
-       ========================================================================== -->
-  <section class="section-console" id="console">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// INTERACTIVE ENVIRONMENT</span>
-        <h2 class="section-title">Khám phá qua Developer Console</h2>
-        <p class="section-subtitle">Chuyển đổi file hoặc gõ lệnh trực tiếp vào terminal bên dưới để tương tác với hồ sơ
-          của tôi.</p>
-      </div>
 
-      <div class="terminal-wrapper">
-        <div class="terminal-header">
-          <div class="terminal-controls">
-            <span class="term-dot term-red"></span>
-            <span class="term-dot term-yellow"></span>
-            <span class="term-dot term-green"></span>
-          </div>
+  <!-- SECTION: terminal.html -->
+<!-- ==========================================================================
+     TERMINAL & DEVELOPER CONSOLE SECTION
+     Chỉnh sửa các tab code mẫu và lệnh dòng lệnh CLI
+     ========================================================================== -->
+<section class="section-console" id="console">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// INTERACTIVE ENVIRONMENT</span>
+      <h2 class="section-title">Khám phá qua Developer Console</h2>
+      <p class="section-subtitle">Chuyển đổi file hoặc gõ lệnh trực tiếp vào terminal bên dưới để tương tác với hồ sơ của tôi.</p>
+    </div>
 
-          <div class="terminal-tabs">
-            <button class="term-tab active" data-target="tab-dev">developer.ts</button>
-            <button class="term-tab" data-target="tab-skills">skills.json</button>
-            <button class="term-tab" data-target="tab-arch">architecture.yaml</button>
-          </div>
-
-          <div class="terminal-actions">
-            <span>bash: ~</span>
-          </div>
+    <div class="terminal-wrapper">
+      <div class="terminal-header">
+        <div class="terminal-controls">
+          <span class="term-dot term-red"></span>
+          <span class="term-dot term-yellow"></span>
+          <span class="term-dot term-green"></span>
         </div>
 
-        <div class="terminal-body">
-          <!-- Tab 1: developer.ts -->
-          <div class="terminal-content active" id="tab-dev">
-            <div><span class="code-comment">// Hồ sơ năng lực kỹ thuật Nguyễn Văn Nhất</span></div>
-            <div><span class="code-keyword">interface</span> <span class="code-fn">EngineerProfile</span> {</div>
-            <div style="padding-left: 1.5rem;"><span class="code-prop">name</span>: <span class="code-string">'Nguyễn
-                Văn Nhất'</span>;</div>
-            <div style="padding-left: 1.5rem;"><span class="code-prop">role</span>: <span class="code-string">'Senior
-                Full-Stack & Cloud Architect'</span>;</div>
-            <div style="padding-left: 1.5rem;"><span class="code-prop">location</span>: <span
-                class="code-string">'Vietnam (Available Worldwide Remote / Relocation)'</span>;</div>
-            <div style="padding-left: 1.5rem;"><span class="code-prop">passion</span>: [<span class="code-string">'High
-                Performance Systems'</span>, <span class="code-string">'Clean Code'</span>, <span
-                class="code-string">'Generative AI'</span>];</div>
-            <div style="padding-left: 1.5rem;"><span class="code-prop">status</span>: <span class="code-string">'Open
-                for Innovation'</span>;</div>
-            <div>}</div>
-            <br>
-            <div><span class="code-keyword">export const</span> <span class="code-fn">getPhilosophy</span> = (): <span
-                class="code-fn">string</span> => {</div>
-            <div style="padding-left: 1.5rem;"><span class="code-keyword">return</span> <span class="code-string">'“Code
-                không chỉ để máy tính hiểu, mà còn phải thanh lịch để đồng đội cùng phát triển.”'</span>;</div>
-            <div>};</div>
-          </div>
+        <div class="terminal-tabs">
+          <button class="term-tab active" data-target="tab-dev">developer.ts</button>
+          <button class="term-tab" data-target="tab-skills">skills.json</button>
+          <button class="term-tab" data-target="tab-arch">architecture.yaml</button>
+        </div>
 
-          <!-- Tab 2: skills.json -->
-          <div class="terminal-content" id="tab-skills">
-            <pre style="color: #cbd5e1; font-family: var(--font-mono);">
+        <div class="terminal-actions">
+          <span>bash: ~</span>
+        </div>
+      </div>
+
+      <div class="terminal-body">
+        <!-- Tab 1: developer.ts -->
+        <div class="terminal-content active" id="tab-dev">
+          <div><span class="code-comment">// Hồ sơ năng lực kỹ thuật Nguyễn Văn Nhất</span></div>
+          <div><span class="code-keyword">interface</span> <span class="code-fn">EngineerProfile</span> {</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">name</span>: <span class="code-string">'Nguyễn Văn Nhất'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">role</span>: <span class="code-string">'Senior Full-Stack & Cloud Architect'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">email</span>: <span class="code-string">'nhatx5xxx@gmail.com'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">education</span>: <span class="code-string">'CMC University (Graduated with Distinction / Loại Giỏi)'</span>;</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">passion</span>: [<span class="code-string">'High Performance Systems'</span>, <span class="code-string">'Clean Code'</span>, <span class="code-string">'Generative AI'</span>];</div>
+          <div style="padding-left: 1.5rem;"><span class="code-prop">status</span>: <span class="code-string">'Open for High-Impact Roles'</span>;</div>
+          <div>}</div>
+          <br>
+          <div><span class="code-keyword">export const</span> <span class="code-fn">getPhilosophy</span> = (): <span class="code-fn">string</span> => {</div>
+          <div style="padding-left: 1.5rem;"><span class="code-keyword">return</span> <span class="code-string">'“Code không chỉ để máy tính hiểu, mà còn phải thanh lịch để đồng đội cùng phát triển.”'</span>;</div>
+          <div>};</div>
+        </div>
+
+        <!-- Tab 2: skills.json -->
+        <div class="terminal-content" id="tab-skills">
+          <pre style="color: #cbd5e1; font-family: var(--font-mono);">
 {
   <span class="code-prop">"frontend"</span>: ["React 19", "Next.js 14", "TypeScript", "Tailwind CSS", "Vue 3"],
   <span class="code-prop">"backend"</span>: ["Node.js", "NestJS", "Golang (Gin/Fiber)", "FastAPI", "gRPC"],
@@ -243,12 +234,12 @@
   <span class="code-prop">"cloud_devops"</span>: ["AWS (ECS, Lambda, S3, RDS)", "Docker", "Kubernetes", "CI/CD Actions"],
   <span class="code-prop">"ai_tooling"</span>: ["OpenAI API", "LangChain", "Vector DBs (Pinecone/Milvus)", "RAG Architecture"]
 }
-            </pre>
-          </div>
+          </pre>
+        </div>
 
-          <!-- Tab 3: architecture.yaml -->
-          <div class="terminal-content" id="tab-arch">
-            <pre style="color: #cbd5e1; font-family: var(--font-mono);">
+        <!-- Tab 3: architecture.yaml -->
+        <div class="terminal-content" id="tab-arch">
+          <pre style="color: #cbd5e1; font-family: var(--font-mono);">
 <span class="code-comment"># Chiến lược thiết kế hệ thống sản phẩm</span>
 <span class="code-prop">system_design</span>:
   <span class="code-prop">api_gateway</span>: Envoy / Cloudflare Edge
@@ -259,814 +250,737 @@
     - <span class="code-prop">data_pipeline</span>: Apache Kafka + TimescaleDB
   <span class="code-prop">monitoring</span>: Prometheus + Grafana + OpenTelemetry
   <span class="code-prop">reliability</span>: 99.99% SLA with automated multi-zone failover
-            </pre>
-          </div>
-
-          <!-- Output of commands -->
-          <div id="terminal-cli-output" style="margin-top: 1rem;"></div>
-
-          <!-- CLI Prompt -->
-          <div class="term-cli-prompt">
-            <span>guest@vannhat-dev:~$</span>
-            <input type="text" id="terminal-cli-input" class="term-cli-input"
-              placeholder="Gõ lệnh (thử: help, skills, projects, contact, neofetch, clear)..." autocomplete="off"
-              spellcheck="false">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       ABOUT SECTION
-       ========================================================================== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="secAboutTag">PROFILE OVERVIEW</span>
-        <h2 class="section-title" data-i18n="secAboutTitle">Kỹ thuật vững chắc, Tư duy sản phẩm sắc bén</h2>
-        <p class="section-subtitle" data-i18n="secAboutSub">Tôi không chỉ viết code, tôi kiến tạo những giải pháp bền
-          vững giải quyết bài toán thực tế của doanh nghiệp.</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-text">
-          <h3>Đam mê kiến tạo hệ thống có khả năng chịu tải hàng triệu người dùng</h3>
-          <p>
-            Bắt đầu hành trình lập trình từ niềm say mê giải quyết các bài toán thuật toán và kiến trúc dữ liệu, tôi đã
-            đồng hành cùng các sản phẩm từ giai đoạn MVP đầu tiên cho đến khi scale phục vụ hàng triệu người dùng thực
-            tế.
-          </p>
-          <p>
-            Thế mạnh của tôi nằm ở việc làm chủ toàn diện vòng đời phát triển phần mềm: từ thiết kế kiến trúc vi dịch vụ
-            (Microservices), thiết lập hạ tầng Cloud tự động hóa (CI/CD, Kubernetes) cho đến tối ưu trải nghiệm người
-            dùng frontend mượt mà ở mức 60fps.
-          </p>
-
-          <div class="about-badges-grid">
-            <div class="about-card">
-              <span class="card-icon">⚡</span>
-              <h4>Tối ưu Hiệu năng Cực hạn</h4>
-              <p>Cam kết chỉ số Web Vitals hoàn hảo, tối ưu database indexing và caching Redis giảm độ trễ dưới 50ms.
-              </p>
-            </div>
-
-            <div class="about-card">
-              <span class="card-icon">🛡️</span>
-              <h4>Bảo mật & Clean Architecture</h4>
-              <p>Áp dụng Domain-Driven Design (DDD), SOLID principles, OWASP top 10 và bảo vệ toàn diện dữ liệu nhạy
-                cảm.</p>
-            </div>
-
-            <div class="about-card">
-              <span class="card-icon">🧠</span>
-              <h4>Tích hợp AI Tiên phong</h4>
-              <p>Ứng dụng LLMs, RAG (Retrieval-Augmented Generation) và AI Agents tự động hoá quy trình kinh doanh.</p>
-            </div>
-
-            <div class="about-card">
-              <span class="card-icon">🤝</span>
-              <h4>Văn hóa Đội nhóm & Agile</h4>
-              <p>Kinh nghiệm dẫn dắt đội ngũ kỹ sư, review code chuẩn chỉ, mentoring và phối hợp ăn ý với Product
-                Manager/UI/UX.</p>
-            </div>
-          </div>
+          </pre>
         </div>
 
-        <div class="about-visual">
-          <div
-            style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px; padding: 2rem;">
-            <h4
-              style="font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem;">
-              <span>📊</span> Tiêu chuẩn Kỹ thuật Cam kết
-            </h4>
+        <!-- Output of commands -->
+        <div id="terminal-cli-output" style="margin-top: 1rem;"></div>
 
-            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-              <div>
-                <div
-                  style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
-                  <span>System Reliability & Uptime</span>
-                  <span style="color: var(--accent-emerald); font-family: var(--font-mono);">99.99%</span>
-                </div>
-                <div class="skill-bar-wrap">
-                  <div class="skill-bar-fill" style="width: 99.9%;"></div>
-                </div>
-              </div>
-
-              <div>
-                <div
-                  style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
-                  <span>Frontend Performance (Lighthouse)</span>
-                  <span style="color: var(--accent-cyan); font-family: var(--font-mono);">98/100</span>
-                </div>
-                <div class="skill-bar-wrap">
-                  <div class="skill-bar-fill" style="width: 98%;"></div>
-                </div>
-              </div>
-
-              <div>
-                <div
-                  style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
-                  <span>Automated Test Coverage (Unit & E2E)</span>
-                  <span style="color: var(--accent-purple); font-family: var(--font-mono);">88%+</span>
-                </div>
-                <div class="skill-bar-wrap">
-                  <div class="skill-bar-fill" style="width: 88%;"></div>
-                </div>
-              </div>
-
-              <div>
-                <div
-                  style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
-                  <span>API Response P95 Under Load</span>
-                  <span style="color: var(--accent-amber); font-family: var(--font-mono);">&lt; 80ms</span>
-                </div>
-                <div class="skill-bar-wrap">
-                  <div class="skill-bar-fill" style="width: 94%;"></div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              style="margin-top: 2rem; padding: 1.2rem; background: rgba(0,242,254,0.05); border: 1px dashed rgba(0,242,254,0.25); border-radius: 12px; font-size: 0.88rem; color: var(--text-secondary);">
-              💡 <em>"Đỉnh cao của lập trình không nằm ở sự phức tạp của code, mà ở khả năng biến những vấn đề phức tạp
-                thành kiến trúc rõ ràng, dễ bảo trì và dễ mở rộng."</em>
-            </div>
-          </div>
+        <!-- CLI Prompt -->
+        <div class="term-cli-prompt">
+          <span>guest@vannhat-dev:~$</span>
+          <input type="text" id="terminal-cli-input" class="term-cli-input" placeholder="Gõ lệnh (thử: help, skills, projects, contact, neofetch, clear)..." autocomplete="off" spellcheck="false">
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       TECH STACK & SKILLS SECTION
-       ========================================================================== -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="secSkillsTag">TECH ARSENAL</span>
-        <h2 class="section-title" data-i18n="secSkillsTitle">Công nghệ & Vũ khí Kỹ thuật</h2>
-        <p class="section-subtitle" data-i18n="secSkillsSub">Được tuyển chọn và áp dụng thành thạo qua nhiều dự án thực
-          tế quy mô lớn.</p>
-      </div>
-
-      <!-- Skill Filter Tabs -->
-      <div class="skills-filter">
-        <button class="filter-btn skill-filter-btn active" data-filter="all" data-i18n="filterAll">Tất cả</button>
-        <button class="filter-btn skill-filter-btn" data-filter="fe" data-i18n="filterFe">Frontend</button>
-        <button class="filter-btn skill-filter-btn" data-filter="be" data-i18n="filterBe">Backend & DB</button>
-        <button class="filter-btn skill-filter-btn" data-filter="cloud" data-i18n="filterCloud">Cloud & DevOps</button>
-        <button class="filter-btn skill-filter-btn" data-filter="ai" data-i18n="filterAi">AI & Data</button>
-      </div>
-
-      <!-- Skills Cards Grid -->
-      <div class="skills-grid">
-        <!-- React / Next.js -->
-        <div class="skill-card" data-category="fe">
-          <div class="skill-header">
-            <div class="skill-icon-box">⚛️</div>
-            <span class="skill-level-badge">Chuyên gia</span>
-          </div>
-          <h4 class="skill-name">React & Next.js 14</h4>
-          <p class="skill-desc">Server Actions, App Router, SSR/SSG/ISR, React Suspense, Custom Hooks & Global State.
-          </p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 95%;"></div>
-          </div>
-        </div>
-
-        <!-- TypeScript -->
-        <div class="skill-card" data-category="fe be">
-          <div class="skill-header">
-            <div class="skill-icon-box">📘</div>
-            <span class="skill-level-badge">Chuyên gia</span>
-          </div>
-          <h4 class="skill-name">TypeScript</h4>
-          <p class="skill-desc">Strict Typing, Generics, Utility Types, AST, type-safe APIs kết hợp Zod & tRPC.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 92%;"></div>
-          </div>
-        </div>
-
-        <!-- Node.js & NestJS -->
-        <div class="skill-card" data-category="be">
-          <div class="skill-header">
-            <div class="skill-icon-box">🟢</div>
-            <span class="skill-level-badge">Chuyên sâu</span>
-          </div>
-          <h4 class="skill-name">Node.js & NestJS</h4>
-          <p class="skill-desc">Enterprise Modular Architecture, Event-driven, Microservices, BullMQ job queues.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 90%;"></div>
-          </div>
-        </div>
-
-        <!-- Golang -->
-        <div class="skill-card" data-category="be">
-          <div class="skill-header">
-            <div class="skill-icon-box">🐹</div>
-            <span class="skill-level-badge">Chuyên sâu</span>
-          </div>
-          <h4 class="skill-name">Golang</h4>
-          <p class="skill-desc">High-concurrency Goroutines, Channels, Low-latency Microservices, Gin/Fiber & gRPC.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 88%;"></div>
-          </div>
-        </div>
-
-        <!-- Python & FastAPI -->
-        <div class="skill-card" data-category="be ai">
-          <div class="skill-header">
-            <div class="skill-icon-box">🐍</div>
-            <span class="skill-level-badge">Chuyên sâu</span>
-          </div>
-          <h4 class="skill-name">Python & FastAPI</h4>
-          <p class="skill-desc">Async IO, AI/ML inference pipelines, Celery background tasks, Data processing.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 86%;"></div>
-          </div>
-        </div>
-
-        <!-- PostgreSQL & Redis -->
-        <div class="skill-card" data-category="be">
-          <div class="skill-header">
-            <div class="skill-icon-box">🐘</div>
-            <span class="skill-level-badge">Chuyên sâu</span>
-          </div>
-          <h4 class="skill-name">PostgreSQL & Redis</h4>
-          <p class="skill-desc">Query optimization, EXPLAIN ANALYZE, Sharding, Replication, Pub/Sub & Caching.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 90%;"></div>
-          </div>
-        </div>
-
-        <!-- Docker & Kubernetes -->
-        <div class="skill-card" data-category="cloud">
-          <div class="skill-header">
-            <div class="skill-icon-box">🐳</div>
-            <span class="skill-level-badge">Chuyên sâu</span>
-          </div>
-          <h4 class="skill-name">Docker & K8s</h4>
-          <p class="skill-desc">Multi-stage builds, Container orchestration, Helm charts, Ingress routing & HPA.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 85%;"></div>
-          </div>
-        </div>
-
-        <!-- AWS Cloud & CI/CD -->
-        <div class="skill-card" data-category="cloud">
-          <div class="skill-header">
-            <div class="skill-icon-box">☁️</div>
-            <span class="skill-level-badge">Chuyên sâu</span>
-          </div>
-          <h4 class="skill-name">AWS & CI/CD</h4>
-          <p class="skill-desc">ECS, Lambda, S3, RDS, CloudFront, Terraform IaC, GitHub Actions pipeline automation.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 86%;"></div>
-          </div>
-        </div>
-
-        <!-- AI & LLM Systems -->
-        <div class="skill-card" data-category="ai">
-          <div class="skill-header">
-            <div class="skill-icon-box">🤖</div>
-            <span class="skill-level-badge">Tiên phong</span>
-          </div>
-          <h4 class="skill-name">LLM & GenAI</h4>
-          <p class="skill-desc">RAG pipeline, Vector Databases (Pinecone, pgvector), Function Calling & AI Agents.</p>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-fill" style="width: 89%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FEATURED PROJECTS SECTION
-       ========================================================================== -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="secProjectsTag">PORTFOLIO SHOWCASE</span>
-        <h2 class="section-title" data-i18n="secProjectsTitle">Dự án Tiêu biểu & Dấu ấn Công nghệ</h2>
-        <p class="section-subtitle" data-i18n="secProjectsSub">Những sản phẩm thực tế kết hợp giữa thiết kế tinh tế và
-          kiến trúc hệ thống mạnh mẽ.</p>
-      </div>
-
-      <!-- Project Filters -->
-      <div class="skills-filter">
-        <button class="filter-btn project-filter-btn active" data-filter="all" data-i18n="filterAll">Tất cả</button>
-        <button class="filter-btn project-filter-btn" data-filter="ai">AI & LLM</button>
-        <button class="filter-btn project-filter-btn" data-filter="ecommerce">E-Commerce</button>
-        <button class="filter-btn project-filter-btn" data-filter="fintech">FinTech & Web3</button>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1: Neuralytik AI -->
-        <div class="project-card" data-category="ai">
-          <div class="project-img-box">
-            <img src="assets/images/project-ai.jpg" alt="Neuralytik AI Platform" class="project-img">
-            <span class="project-badge-float">AI Platform</span>
-          </div>
-
-          <div class="project-content">
-            <h3 class="project-title">Neuralytik AI Platform</h3>
-            <p class="project-desc">
-              Nền tảng giám sát thời gian thực & phân tích độ trễ cho các mô hình AI/LLM phân tán (GPT-4, Claude 3.5,
-              Llama 3) với hệ thống cảnh báo bất thường tự động.
-            </p>
-
-            <div class="project-metrics">
-              <span class="metric-pill">🚀 12.5M+ req/day</span>
-              <span class="metric-pill">⚡ &lt; 45ms P95</span>
-            </div>
-
-            <div class="project-tags">
-              <span class="project-tag">Next.js 14</span>
-              <span class="project-tag">FastAPI</span>
-              <span class="project-tag">Golang</span>
-              <span class="project-tag">TimescaleDB</span>
-            </div>
-
-            <div class="project-actions">
-              <button class="btn btn-primary btn-sm open-project-btn" data-project="ai" style="flex: 1;">
-                Xem chi tiết & Kiến trúc 🔍
-              </button>
-              <a href="https://github.com/vannhat/neuralytik-ai" target="_blank" class="icon-btn" title="GitHub Source">
-                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Aetheris E-Commerce -->
-        <div class="project-card" data-category="ecommerce">
-          <div class="project-img-box">
-            <img src="assets/images/project-ecommerce.jpg" alt="Aetheris E-Commerce Platform" class="project-img">
-            <span class="project-badge-float">Headless Commerce</span>
-          </div>
-
-          <div class="project-content">
-            <h3 class="project-title">Aetheris Luxury E-Commerce</h3>
-            <p class="project-desc">
-              Sàn thương mại điện tử công nghệ cao cấp kiến trúc Headless. Tối ưu tìm kiếm full-text bằng Elasticsearch,
-              hỗ trợ thanh toán quốc tế đa tiền tệ an toàn.
-            </p>
-
-            <div class="project-metrics">
-              <span class="metric-pill">⭐ 100/100 Lighthouse</span>
-              <span class="metric-pill">📈 +42% Conversion</span>
-            </div>
-
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">NestJS</span>
-              <span class="project-tag">GraphQL</span>
-              <span class="project-tag">Elasticsearch</span>
-            </div>
-
-            <div class="project-actions">
-              <button class="btn btn-primary btn-sm open-project-btn" data-project="ecommerce" style="flex: 1;">
-                Xem chi tiết & Kiến trúc 🔍
-              </button>
-              <a href="https://github.com/vannhat/aetheris-ecommerce" target="_blank" class="icon-btn"
-                title="GitHub Source">
-                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: CryptoQuant FinTech -->
-        <div class="project-card" data-category="fintech">
-          <div class="project-img-box">
-            <img src="assets/images/project-fintech.jpg" alt="CryptoQuant Trading Dashboard" class="project-img">
-            <span class="project-badge-float">Web3 FinTech</span>
-          </div>
-
-          <div class="project-content">
-            <h3 class="project-title">CryptoQuant Asset Hub</h3>
-            <p class="project-desc">
-              Sàn giao dịch và phân tích luồng tiền on-chain real-time. Engine khớp lệnh Golang cho thông lượng 100k TPS
-              và stream WebSocket độ trễ dưới 15ms.
-            </p>
-
-            <div class="project-metrics">
-              <span class="metric-pill">⚡ 100k TPS Matching</span>
-              <span class="metric-pill">🔒 AES-256 Vault</span>
-            </div>
-
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">Golang</span>
-              <span class="project-tag">WebSockets</span>
-              <span class="project-tag">ClickHouse</span>
-            </div>
-
-            <div class="project-actions">
-              <button class="btn btn-primary btn-sm open-project-btn" data-project="fintech" style="flex: 1;">
-                Xem chi tiết & Kiến trúc 🔍
-              </button>
-              <a href="https://github.com/vannhat/cryptoquant-exchange" target="_blank" class="icon-btn"
-                title="GitHub Source">
-                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       CAREER MILESTONES & EXPERIENCE
-       ========================================================================== -->
-  <section class="experience" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="secExpTag">CAREER MILESTONES</span>
-        <h2 class="section-title" data-i18n="secExpTitle">Lộ trình Nghề nghiệp & Kinh nghiệm</h2>
-        <p class="section-subtitle" data-i18n="secExpSub">Hành trình học hỏi không ngừng và đóng góp vào những cột mốc
-          quan trọng.</p>
-      </div>
-
-      <div class="timeline">
-        <!-- Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-top">
-              <span class="timeline-role">Senior Full-Stack Lead & Solutions Architect</span>
-              <span class="timeline-period">2024 - Hiện tại</span>
-            </div>
-            <div class="timeline-company">NexGen Tech Innovations / Enterprise Solutions</div>
-            <ul class="timeline-duties">
-              <li>Chịu trách nhiệm kiến trúc tổng thể nền tảng phân tích AI phục vụ hơn 50 doanh nghiệp đối tác quốc tế.
-              </li>
-              <li>Chuyển đổi thành công hệ thống Monolith cũ sang Microservices Golang + NestJS, giảm 65% chi phí hạ
-                tầng AWS.</li>
-              <li>Dẫn dắt đội ngũ kỹ sư 8 thành viên, thiết lập tiêu chuẩn Clean Code, CI/CD tự động và quy trình Code
-                Review nghiêm ngặt.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-top">
-              <span class="timeline-role">Full-Stack Engineer</span>
-              <span class="timeline-period">2022 - 2024</span>
-            </div>
-            <div class="timeline-company">V-Scale E-Commerce & FinTech Labs</div>
-            <ul class="timeline-duties">
-              <li>Xây dựng hệ thống giỏ hàng và thanh toán trực tuyến xử lý hơn 100,000 giao dịch mỗi ngày không phát
-                sinh lỗi (0% downtime).</li>
-              <li>Tối ưu hóa chỉ số Core Web Vitals cho toàn bộ frontend Next.js, đưa điểm Lighthouse từ 68 lên 98/100.
-              </li>
-              <li>Thiết kế hệ thống caching đa tầng với Redis và CDN Cloudflare, giảm tải cho PostgreSQL database chính
-                hơn 70%.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-top">
-              <span class="timeline-role">Software Engineer (Backend Focus)</span>
-              <span class="timeline-period">2020 - 2022</span>
-            </div>
-            <div class="timeline-company">DataFlow Solutions Vietnam</div>
-            <ul class="timeline-duties">
-              <li>Phát triển RESTful & GraphQL APIs bằng Node.js và TypeScript với tài liệu Swagger / OpenAPI hoàn
-                chỉnh.</li>
-              <li>Tham gia thiết kế database schema PostgreSQL và tối ưu hóa các câu truy vấn phức tạp cho báo cáo tài
-                chính.</li>
-              <li>Viết Unit Test và Integration Test với Jest, duy trì độ bao phủ kiểm thử luôn trên 85%.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-top">
-              <span class="timeline-role">Cử nhân Kỹ thuật Phần mềm (B.S. in Software Engineering)</span>
-              <span class="timeline-period">2017 - 2021</span>
-            </div>
-            <div class="timeline-company">Đại học Bách Khoa / ĐHQG</div>
-            <ul class="timeline-duties">
-              <li>Tốt nghiệp loại Xuất sắc (GPA: 3.6/4.0), giải Ba cuộc thi Lập trình Olympic Tin học sinh viên.</li>
-              <li>Nghiên cứu đề tài khoa học về "Thuật toán tối ưu hóa phân phối tải trong hệ thống vi dịch vụ".</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       TESTIMONIALS / CLIENT FEEDBACK
-       ========================================================================== -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// TESTIMONIALS & REVIEWS</span>
-        <h2 class="section-title">Đồng nghiệp & Khách hàng nói gì?</h2>
-        <p class="section-subtitle">Sự tín nhiệm được xây dựng dựa trên kết quả công việc vượt trội và tinh thần trách
-          nhiệm cao.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <p class="test-quote">
-            "Văn Nhất là một trong những kỹ sư phần mềm xuất sắc nhất mà tôi từng làm việc cùng. Khả năng thiết kế hệ
-            thống chịu tải và giải quyết các bài toán kỹ thuật phức tạp của bạn ấy thực sự rất ấn tượng."
-          </p>
-          <div class="test-author-box">
-            <div class="test-avatar">MH</div>
-            <div>
-              <div class="test-name">Minh Hoàng</div>
-              <div class="test-title">CTO @ NexGen Tech</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="test-quote">
-            "Không chỉ có kỹ năng lập trình thượng thừa, Nhất còn sở hữu tư duy sản phẩm rất bén. Bạn luôn đặt trải
-            nghiệm người dùng cuối lên hàng đầu và chủ động đề xuất giải pháp tối ưu hơn cả yêu cầu ban đầu."
-          </p>
-          <div class="test-author-box">
-            <div class="test-avatar">TA</div>
-            <div>
-              <div class="test-name">Tuấn Anh</div>
-              <div class="test-title">Product Director @ V-Scale</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="test-quote">
-            "Một Senior Engineer đáng tin cậy! Dự án luôn được bàn giao đúng hạn với chất lượng code cực kỳ sạch sẽ, có
-            tài liệu kỹ thuật rõ ràng giúp đội ngũ phát triển tiếp theo mở rộng rất thuận tiện."
-          </p>
-          <div class="test-author-box">
-            <div class="test-avatar">DL</div>
-            <div>
-              <div class="test-name">Đức Long</div>
-              <div class="test-title">Lead Architect @ Global FinTech</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       CONTACT & COLLABORATION SECTION
-       ========================================================================== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="secContactTag">GET IN TOUCH</span>
-        <h2 class="section-title" data-i18n="secContactTitle">Bắt đầu một Dự án Tuyệt vời?</h2>
-        <p class="section-subtitle" data-i18n="secContactSub">Tôi luôn hào hứng với những ý tưởng đột phá, cơ hội hợp
-          tác hoặc thử thách kiến trúc mới.</p>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Contact Information -->
-        <div class="contact-info">
-          <!-- Email -->
-          <div class="contact-item">
-            <div class="contact-icon-box">📧</div>
-            <div>
-              <div class="contact-label">Email trực tiếp</div>
-              <div class="contact-val">contact@vannhat.dev</div>
-            </div>
-            <button class="contact-copy-btn copy-btn" data-copy="contact@vannhat.dev" title="Sao chép email">
-              📋
-            </button>
-          </div>
-
-          <!-- Phone / Zalo -->
-          <div class="contact-item">
-            <div class="contact-icon-box">📱</div>
-            <div>
-              <div class="contact-label">Điện thoại / Zalo</div>
-              <div class="contact-val">+84 987 654 321</div>
-            </div>
-            <button class="contact-copy-btn copy-btn" data-copy="+84987654321" title="Sao chép số điện thoại">
-              📋
-            </button>
-          </div>
-
-          <!-- Telegram -->
-          <div class="contact-item">
-            <div class="contact-icon-box">✈️</div>
-            <div>
-              <div class="contact-label">Telegram</div>
-              <div class="contact-val">@vannhat_dev</div>
-            </div>
-            <button class="contact-copy-btn copy-btn" data-copy="@vannhat_dev" title="Sao chép username">
-              📋
-            </button>
-          </div>
-
-          <!-- Location -->
-          <div class="contact-item">
-            <div class="contact-icon-box">📍</div>
-            <div>
-              <div class="contact-label">Địa điểm làm việc</div>
-              <div class="contact-val">Hồ Chí Minh / Hà Nội (Sẵn sàng Remote)</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form-card">
-          <form id="contact-form">
-            <div class="form-group">
-              <label class="form-label" for="contact-name" data-i18n="formName">Họ và tên của bạn</label>
-              <input type="text" id="contact-name" class="form-input" placeholder="Ví dụ: Nguyễn Văn An" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-email" data-i18n="formEmail">Địa chỉ Email</label>
-              <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-subject" data-i18n="formSubject">Chủ đề / Lĩnh vực hợp tác</label>
-              <input type="text" id="contact-subject" class="form-input"
-                placeholder="Ví dụ: Hợp tác phát triển SaaS / Tư vấn kiến trúc Cloud" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-message" data-i18n="formMsg">Nội dung tin nhắn</label>
-              <textarea id="contact-message" class="form-textarea"
-                placeholder="Mô tả ngắn gọn về nhu cầu hoặc dự án của bạn..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="formSubmit">
-              Gửi tin nhắn ngay ⚡
-            </button>
-
-            <div id="form-status-msg" class="form-msg-status"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       MODAL: PROJECT DETAILS & SYSTEM ARCHITECTURE
-       ========================================================================== -->
-  <div class="modal-backdrop" id="project-modal">
-    <div class="modal-container">
-      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
-      <div class="modal-body" id="project-modal-body">
-        <!-- Content injected dynamically via main.js -->
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ==========================================================================
-       MODAL: CURRICULUM VITAE (CV PREVIEW & DOWNLOAD)
-       ========================================================================== -->
-  <div class="modal-backdrop" id="cv-modal">
-    <div class="modal-container" style="max-width: 840px;">
-      <button class="modal-close-btn" id="cv-modal-close-btn" aria-label="Close CV modal">✕</button>
-      <div class="modal-body">
-        <div
-          style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 1.25rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
-          <div>
-            <h2 style="font-size: 1.8rem; color: #fff;">Nguyễn Văn Nhất</h2>
-            <div style="color: var(--accent-cyan); font-family: var(--font-mono); font-weight: 600;">Senior Full-Stack
-              Engineer & Cloud Solutions Architect</div>
+
+  <!-- SECTION: about.html -->
+<!-- ==========================================================================
+     ABOUT SECTION
+     Chỉnh sửa triết lý làm việc, câu chuyện bản thân & các thế mạnh kỹ thuật
+     ========================================================================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="secAboutTag">PROFILE OVERVIEW</span>
+      <h2 class="section-title" data-i18n="secAboutTitle">Kỹ thuật vững chắc, Tư duy sản phẩm sắc bén</h2>
+      <p class="section-subtitle" data-i18n="secAboutSub">Tôi không chỉ viết code, tôi kiến tạo những giải pháp bền vững giải quyết bài toán thực tế của doanh nghiệp.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>Đam mê kiến tạo hệ thống có khả năng chịu tải hàng triệu người dùng</h3>
+        <p>
+          Bắt đầu hành trình lập trình từ niềm say mê giải quyết các bài toán thuật toán và kiến trúc dữ liệu, tôi đã đồng hành cùng các sản phẩm từ giai đoạn MVP đầu tiên cho đến khi scale phục vụ hàng triệu người dùng thực tế.
+        </p>
+        <p>
+          Thế mạnh của tôi nằm ở việc làm chủ toàn diện vòng đời phát triển phần mềm: từ thiết kế kiến trúc vi dịch vụ (Microservices), thiết lập hạ tầng Cloud tự động hóa (CI/CD, Kubernetes) cho đến tối ưu trải nghiệm người dùng frontend mượt mà ở mức 60fps.
+        </p>
+
+        <div class="about-badges-grid">
+          <div class="about-card">
+            <span class="card-icon">⚡</span>
+            <h4>Tối ưu Hiệu năng Cực hạn</h4>
+            <p>Cam kết chỉ số Web Vitals hoàn hảo, tối ưu database indexing và caching Redis giảm độ trễ dưới 50ms.</p>
           </div>
-          <div style="display: flex; gap: 0.75rem;">
-            <button onclick="window.print()" class="btn btn-secondary btn-sm">
-              🖨️ In / Xuất PDF
+
+          <div class="about-card">
+            <span class="card-icon">🛡️</span>
+            <h4>Bảo mật & Clean Architecture</h4>
+            <p>Áp dụng Domain-Driven Design (DDD), SOLID principles, OWASP top 10 và bảo vệ toàn diện dữ liệu nhạy cảm.</p>
+          </div>
+
+          <div class="about-card">
+            <span class="card-icon">🧠</span>
+            <h4>Tích hợp AI Tiên phong</h4>
+            <p>Ứng dụng LLMs, RAG (Retrieval-Augmented Generation) và AI Agents tự động hoá quy trình kinh doanh.</p>
+          </div>
+
+          <div class="about-card">
+            <span class="card-icon">🤝</span>
+            <h4>Văn hóa Đội nhóm & Agile</h4>
+            <p>Kinh nghiệm dẫn dắt đội ngũ kỹ sư, review code chuẩn chỉ, mentoring và phối hợp ăn ý với Product Manager/UI/UX.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px; padding: 2rem;">
+          <h4 style="font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem;">
+            <span>📊</span> Tiêu chuẩn Kỹ thuật Cam kết
+          </h4>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
+                <span>System Reliability & Uptime</span>
+                <span style="color: var(--accent-emerald); font-family: var(--font-mono);">99.99%</span>
+              </div>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 99.9%;"></div></div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
+                <span>Frontend Performance (Lighthouse)</span>
+                <span style="color: var(--accent-cyan); font-family: var(--font-mono);">98/100</span>
+              </div>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 98%;"></div></div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
+                <span>Automated Test Coverage (Unit & E2E)</span>
+                <span style="color: var(--accent-purple); font-family: var(--font-mono);">88%+</span>
+              </div>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
+                <span>API Response P95 Under Load</span>
+                <span style="color: var(--accent-amber); font-family: var(--font-mono);">&lt; 80ms</span>
+              </div>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+            </div>
+          </div>
+
+            <div style="margin-top: 2rem; padding: 1.2rem; background: rgba(0,242,254,0.05); border: 1px dashed rgba(0,242,254,0.25); border-radius: 12px; font-size: 0.88rem; color: var(--text-secondary);">
+              💡 <em>"Đỉnh cao của lập trình không nằm ở sự phức tạp của code, mà ở khả năng biến những vấn đề phức tạp thành kiến trúc rõ ràng, dễ bảo trì và dễ mở rộng."</em>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: skills.html -->
+<!-- ==========================================================================
+     SKILLS & TECH ARSENAL SECTION
+     Chỉnh sửa các danh mục kỹ năng, mức độ phần trăm và công nghệ
+     ========================================================================== -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="secSkillsTag">TECH ARSENAL</span>
+      <h2 class="section-title" data-i18n="secSkillsTitle">Công nghệ & Vũ khí Kỹ thuật</h2>
+      <p class="section-subtitle" data-i18n="secSkillsSub">Được tuyển chọn và áp dụng thành thạo qua nhiều dự án thực tế quy mô lớn.</p>
+    </div>
+
+    <!-- Skill Filter Tabs -->
+    <div class="skills-filter">
+      <button class="filter-btn skill-filter-btn active" data-filter="all" data-i18n="filterAll">Tất cả</button>
+      <button class="filter-btn skill-filter-btn" data-filter="fe" data-i18n="filterFe">Frontend</button>
+      <button class="filter-btn skill-filter-btn" data-filter="be" data-i18n="filterBe">Backend & DB</button>
+      <button class="filter-btn skill-filter-btn" data-filter="cloud" data-i18n="filterCloud">Cloud & DevOps</button>
+      <button class="filter-btn skill-filter-btn" data-filter="ai" data-i18n="filterAi">AI & Data</button>
+    </div>
+
+    <!-- Skills Cards Grid -->
+    <div class="skills-grid">
+      <!-- React / Next.js -->
+      <div class="skill-card" data-category="fe">
+        <div class="skill-header">
+          <div class="skill-icon-box">⚛️</div>
+          <span class="skill-level-badge">Chuyên gia</span>
+        </div>
+        <h4 class="skill-name">React & Next.js 14</h4>
+        <p class="skill-desc">Server Actions, App Router, SSR/SSG/ISR, React Suspense, Custom Hooks & Global State.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+      </div>
+
+      <!-- TypeScript -->
+      <div class="skill-card" data-category="fe be">
+        <div class="skill-header">
+          <div class="skill-icon-box">📘</div>
+          <span class="skill-level-badge">Chuyên gia</span>
+        </div>
+        <h4 class="skill-name">TypeScript</h4>
+        <p class="skill-desc">Strict Typing, Generics, Utility Types, AST, type-safe APIs kết hợp Zod & tRPC.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+      </div>
+
+      <!-- Node.js & NestJS -->
+      <div class="skill-card" data-category="be">
+        <div class="skill-header">
+          <div class="skill-icon-box">🟢</div>
+          <span class="skill-level-badge">Chuyên sâu</span>
+        </div>
+        <h4 class="skill-name">Node.js & NestJS</h4>
+        <p class="skill-desc">Enterprise Modular Architecture, Event-driven, Microservices, BullMQ job queues.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+      </div>
+
+      <!-- Golang -->
+      <div class="skill-card" data-category="be">
+        <div class="skill-header">
+          <div class="skill-icon-box">🐹</div>
+          <span class="skill-level-badge">Chuyên sâu</span>
+        </div>
+        <h4 class="skill-name">Golang</h4>
+        <p class="skill-desc">High-concurrency Goroutines, Channels, Low-latency Microservices, Gin/Fiber & gRPC.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+      </div>
+
+      <!-- Python & FastAPI -->
+      <div class="skill-card" data-category="be ai">
+        <div class="skill-header">
+          <div class="skill-icon-box">🐍</div>
+          <span class="skill-level-badge">Chuyên sâu</span>
+        </div>
+        <h4 class="skill-name">Python & FastAPI</h4>
+        <p class="skill-desc">Async IO, AI/ML inference pipelines, Celery background tasks, Data processing.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+      </div>
+
+      <!-- PostgreSQL & Redis -->
+      <div class="skill-card" data-category="be">
+        <div class="skill-header">
+          <div class="skill-icon-box">🐘</div>
+          <span class="skill-level-badge">Chuyên sâu</span>
+        </div>
+        <h4 class="skill-name">PostgreSQL & Redis</h4>
+        <p class="skill-desc">Query optimization, EXPLAIN ANALYZE, Sharding, Replication, Pub/Sub & Caching.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+      </div>
+
+      <!-- Docker & Kubernetes -->
+      <div class="skill-card" data-category="cloud">
+        <div class="skill-header">
+          <div class="skill-icon-box">🐳</div>
+          <span class="skill-level-badge">Chuyên sâu</span>
+        </div>
+        <h4 class="skill-name">Docker & K8s</h4>
+        <p class="skill-desc">Multi-stage builds, Container orchestration, Helm charts, Ingress routing & HPA.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+      </div>
+
+      <!-- AWS Cloud & CI/CD -->
+      <div class="skill-card" data-category="cloud">
+        <div class="skill-header">
+          <div class="skill-icon-box">☁️</div>
+          <span class="skill-level-badge">Chuyên sâu</span>
+        </div>
+        <h4 class="skill-name">AWS & CI/CD</h4>
+        <p class="skill-desc">ECS, Lambda, S3, RDS, CloudFront, Terraform IaC, GitHub Actions pipeline automation.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+      </div>
+
+      <!-- AI & LLM Systems -->
+      <div class="skill-card" data-category="ai">
+        <div class="skill-header">
+          <div class="skill-icon-box">🤖</div>
+          <span class="skill-level-badge">Tiên phong</span>
+        </div>
+        <h4 class="skill-name">LLM & GenAI</h4>
+        <p class="skill-desc">RAG pipeline, Vector Databases (Pinecone, pgvector), Function Calling & AI Agents.</p>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 89%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: projects.html -->
+<!-- ==========================================================================
+     FEATURED PROJECTS SECTION
+     Chỉnh sửa danh sách dự án, ảnh minh họa, tags và link demo / GitHub
+     ========================================================================== -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="secProjectsTag">PORTFOLIO SHOWCASE</span>
+      <h2 class="section-title" data-i18n="secProjectsTitle">Dự án Tiêu biểu & Dấu ấn Công nghệ</h2>
+      <p class="section-subtitle" data-i18n="secProjectsSub">Những sản phẩm thực tế kết hợp giữa thiết kế tinh tế và kiến trúc hệ thống mạnh mẽ.</p>
+    </div>
+
+    <!-- Project Filters -->
+    <div class="skills-filter">
+      <button class="filter-btn project-filter-btn active" data-filter="all" data-i18n="filterAll">Tất cả</button>
+      <button class="filter-btn project-filter-btn" data-filter="ai">AI & LLM</button>
+      <button class="filter-btn project-filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button class="filter-btn project-filter-btn" data-filter="fintech">FinTech & Web3</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1: Neuralytik AI -->
+      <div class="project-card" data-category="ai">
+        <div class="project-img-box">
+          <img src="assets/images/project-ai.jpg" alt="Neuralytik AI Platform" class="project-img">
+          <span class="project-badge-float">AI Platform</span>
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Neuralytik AI Platform</h3>
+          <p class="project-desc">
+            Nền tảng giám sát thời gian thực & phân tích độ trễ cho các mô hình AI/LLM phân tán (GPT-4, Claude 3.5, Llama 3) với hệ thống cảnh báo bất thường tự động.
+          </p>
+
+          <div class="project-metrics">
+            <span class="metric-pill">🚀 12.5M+ req/day</span>
+            <span class="metric-pill">⚡ &lt; 45ms P95</span>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Next.js 14</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Golang</span>
+            <span class="project-tag">TimescaleDB</span>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm open-project-btn" data-project="ai" style="flex: 1;">
+              Xem chi tiết & Kiến trúc 🔍
             </button>
-            <a href="mailto:contact@vannhat.dev" class="btn btn-primary btn-sm">
-              ✉️ Tuyển dụng
+            <a href="https://github.com/vannhat/neuralytik-ai" target="_blank" class="icon-btn" title="GitHub Source">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
           </div>
         </div>
+      </div>
 
-        <div
-          style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 1.5rem;">
-          <div>
-            <h4
-              style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">
-              // Tóm tắt năng lực (Executive Summary)</h4>
-            <p>
-              Kỹ sư phần mềm cao cấp với hơn 5 năm kinh nghiệm chuyên sâu trong việc thiết kế kiến trúc phân tán chịu
-              tải lớn, xây dựng web application hiệu năng cao với React/Next.js và tối ưu hóa backend vi dịch vụ với
-              Golang, Node.js và hạ tầng Cloud AWS/Kubernetes. Có năng lực đã được chứng minh trong việc lãnh đạo kỹ
-              thuật và áp dụng GenAI vào sản phẩm thực tế.
-            </p>
+      <!-- Project 2: Aetheris E-Commerce -->
+      <div class="project-card" data-category="ecommerce">
+        <div class="project-img-box">
+          <img src="assets/images/project-ecommerce.jpg" alt="Aetheris E-Commerce Platform" class="project-img">
+          <span class="project-badge-float">Headless Commerce</span>
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Aetheris Luxury E-Commerce</h3>
+          <p class="project-desc">
+            Sàn thương mại điện tử công nghệ cao cấp kiến trúc Headless. Tối ưu tìm kiếm full-text bằng Elasticsearch, hỗ trợ thanh toán quốc tế đa tiền tệ an toàn.
+          </p>
+
+          <div class="project-metrics">
+            <span class="metric-pill">⭐ 100/100 Lighthouse</span>
+            <span class="metric-pill">📈 +42% Conversion</span>
           </div>
 
-          <div>
-            <h4
-              style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">
-              // Kỹ năng chuyên môn cốt lõi</h4>
-            <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
-              <li><strong>Frontend:</strong> React 19, Next.js 14, TypeScript, Vue 3, Tailwind CSS, Responsive Design,
-                State Management (Zustand, Redux).</li>
-              <li><strong>Backend:</strong> Golang, Node.js (NestJS, Express), Python (FastAPI), RESTful API, gRPC,
-                GraphQL.</li>
-              <li><strong>Database & Storage:</strong> PostgreSQL, Redis, MongoDB, ClickHouse, TimescaleDB,
-                ElasticSearch.</li>
-              <li><strong>Cloud & DevOps:</strong> Docker, Kubernetes, AWS (ECS, Lambda, RDS, S3), CI/CD (GitHub
-                Actions), Terraform.</li>
-              <li><strong>AI Engineering:</strong> RAG Architecture, LangChain, Vector Databases (Pinecone, pgvector),
-                LLM Fine-tuning & Prompt Engineering.</li>
-            </ul>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">NestJS</span>
+            <span class="project-tag">GraphQL</span>
+            <span class="project-tag">Elasticsearch</span>
           </div>
 
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm open-project-btn" data-project="ecommerce" style="flex: 1;">
+              Xem chi tiết & Kiến trúc 🔍
+            </button>
+            <a href="https://github.com/vannhat/aetheris-ecommerce" target="_blank" class="icon-btn" title="GitHub Source">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: CryptoQuant FinTech -->
+      <div class="project-card" data-category="fintech">
+        <div class="project-img-box">
+          <img src="assets/images/project-fintech.jpg" alt="CryptoQuant Trading Dashboard" class="project-img">
+          <span class="project-badge-float">Web3 FinTech</span>
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">CryptoQuant Asset Hub</h3>
+          <p class="project-desc">
+            Sàn giao dịch và phân tích luồng tiền on-chain real-time. Engine khớp lệnh Golang cho thông lượng 100k TPS và stream WebSocket độ trễ dưới 15ms.
+          </p>
+
+          <div class="project-metrics">
+            <span class="metric-pill">⚡ 100k TPS Matching</span>
+            <span class="metric-pill">🔒 AES-256 Vault</span>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Golang</span>
+            <span class="project-tag">WebSockets</span>
+            <span class="project-tag">ClickHouse</span>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm open-project-btn" data-project="fintech" style="flex: 1;">
+              Xem chi tiết & Kiến trúc 🔍
+            </button>
+            <a href="https://github.com/vannhat/cryptoquant-exchange" target="_blank" class="icon-btn" title="GitHub Source">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: experience.html -->
+<!-- ==========================================================================
+     CAREER MILESTONES & EXPERIENCE SECTION
+     Chỉnh sửa lộ trình công tác, vị trí công việc, trường học & bằng cấp
+     ========================================================================== -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="secExpTag">CAREER MILESTONES</span>
+      <h2 class="section-title" data-i18n="secExpTitle">Lộ trình Nghề nghiệp & Kinh nghiệm</h2>
+      <p class="section-subtitle" data-i18n="secExpSub">Hành trình học hỏi không ngừng và đóng góp vào những cột mốc quan trọng.</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Vị trí 1: Hiện tại -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-role">Senior Full-Stack Lead & Solutions Architect</span>
+            <span class="timeline-period">2024 - Hiện tại</span>
+          </div>
+          <div class="timeline-company">NexGen Tech Innovations / Enterprise Solutions</div>
+          <ul class="timeline-duties">
+            <li>Chịu trách nhiệm kiến trúc tổng thể nền tảng phân tích AI phục vụ hơn 50 doanh nghiệp đối tác quốc tế.</li>
+            <li>Chuyển đổi thành công hệ thống Monolith cũ sang Microservices Golang + NestJS, giảm 65% chi phí hạ tầng AWS.</li>
+            <li>Dẫn dắt đội ngũ kỹ sư 8 thành viên, thiết lập tiêu chuẩn Clean Code, CI/CD tự động và quy trình Code Review nghiêm ngặt.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Vị trí 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-role">Full-Stack Engineer</span>
+            <span class="timeline-period">2022 - 2024</span>
+          </div>
+          <div class="timeline-company">V-Scale E-Commerce & FinTech Labs</div>
+          <ul class="timeline-duties">
+            <li>Xây dựng hệ thống giỏ hàng và thanh toán trực tuyến xử lý hơn 100,000 giao dịch mỗi ngày không phát sinh lỗi (0% downtime).</li>
+            <li>Tối ưu hóa chỉ số Core Web Vitals cho toàn bộ frontend Next.js, đưa điểm Lighthouse từ 68 lên 98/100.</li>
+            <li>Thiết kế hệ thống caching đa tầng với Redis và CDN Cloudflare, giảm tải cho PostgreSQL database chính hơn 70%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Vị trí 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-role">Software Engineer (Backend Focus)</span>
+            <span class="timeline-period">2020 - 2022</span>
+          </div>
+          <div class="timeline-company">DataFlow Solutions Vietnam</div>
+          <ul class="timeline-duties">
+            <li>Phát triển RESTful & GraphQL APIs bằng Node.js và TypeScript với tài liệu Swagger / OpenAPI hoàn chỉnh.</li>
+            <li>Tham gia thiết kế database schema PostgreSQL và tối ưu hóa các câu truy vấn phức tạp cho báo cáo tài chính.</li>
+            <li>Viết Unit Test và Integration Test với Jest, duy trì độ bao phủ kiểm thử luôn trên 85%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Học vấn & Bằng cấp: Đại học CMC (CMC University) - Loại Giỏi -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-role">Cử nhân Công nghệ Thông tin (B.S. in Information Technology)</span>
+            <span class="timeline-period">2017 - 2021</span>
+          </div>
+          <div class="timeline-company">Trường Đại học CMC (CMC University)</div>
+          <ul class="timeline-duties">
+            <li><strong>Tốt nghiệp loại Giỏi</strong> ngành Công nghệ Thông tin (GPA xuất sắc).</li>
+            <li>Nghiên cứu và phát triển đề tài tốt nghiệp về "Kiến trúc hệ thống phân tán chịu tải lớn và tối ưu hóa cơ sở dữ liệu thời gian thực".</li>
+            <li>Đạt giải thưởng trong các cuộc thi lập trình và giải thuật sinh viên cấp trường và mở rộng.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: testimonials.html -->
+<!-- ==========================================================================
+     TESTIMONIALS SECTION
+     Chỉnh sửa đánh giá, nhận xét từ đồng nghiệp, CTO và cấp quản lý
+     ========================================================================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// TESTIMONIALS & REVIEWS</span>
+      <h2 class="section-title">Đồng nghiệp & Khách hàng nói gì?</h2>
+      <p class="section-subtitle">Sự tín nhiệm được xây dựng dựa trên kết quả công việc vượt trội và tinh thần trách nhiệm cao.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="test-quote">
+          "Văn Nhất là một trong những kỹ sư phần mềm xuất sắc nhất mà tôi từng làm việc cùng. Khả năng thiết kế hệ thống chịu tải và giải quyết các bài toán kỹ thuật phức tạp của bạn ấy thực sự rất ấn tượng."
+        </p>
+        <div class="test-author-box">
+          <div class="test-avatar">MH</div>
           <div>
-            <h4
-              style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">
-              // Học vấn & Chứng chỉ Quốc tế</h4>
-            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
-              <div>
-                <strong>Đại học Bách Khoa / ĐHQG</strong> - Cử nhân Kỹ thuật Phần mềm (Xuất sắc - GPA 3.6/4.0)
-              </div>
-              <div style="color: var(--text-muted); font-size: 0.88rem;">
-                Chứng chỉ: AWS Certified Solutions Architect - Associate | CKAD (Certified Kubernetes Application
-                Developer)
-              </div>
+            <div class="test-name">Minh Hoàng</div>
+            <div class="test-title">CTO @ NexGen Tech</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="test-quote">
+          "Không chỉ có kỹ năng lập trình thượng thừa, Nhất còn sở hữu tư duy sản phẩm rất bén. Bạn luôn đặt trải nghiệm người dùng cuối lên hàng đầu và chủ động đề xuất giải pháp tối ưu hơn cả yêu cầu ban đầu."
+        </p>
+        <div class="test-author-box">
+          <div class="test-avatar">TA</div>
+          <div>
+            <div class="test-name">Tuấn Anh</div>
+            <div class="test-title">Product Director @ V-Scale</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="test-quote">
+          "Một Senior Engineer đáng tin cậy! Dự án luôn được bàn giao đúng hạn với chất lượng code cực kỳ sạch sẽ, có tài liệu kỹ thuật rõ ràng giúp đội ngũ phát triển tiếp theo mở rộng rất thuận tiện."
+        </p>
+        <div class="test-author-box">
+          <div class="test-avatar">DL</div>
+          <div>
+            <div class="test-name">Đức Long</div>
+            <div class="test-title">Lead Architect @ Global FinTech</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: contact.html -->
+<!-- ==========================================================================
+     CONTACT & COLLABORATION SECTION
+     Chỉnh sửa thông tin liên hệ: Email nhatx5xxx@gmail.com, SĐT, Zalo, Telegram & Form
+     ========================================================================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="secContactTag">GET IN TOUCH</span>
+      <h2 class="section-title" data-i18n="secContactTitle">Bắt đầu một Dự án Tuyệt vời?</h2>
+      <p class="section-subtitle" data-i18n="secContactSub">Tôi luôn hào hứng với những ý tưởng đột phá, cơ hội hợp tác hoặc thử thách kiến trúc mới.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Cột trái: Danh sách các kênh liên hệ trực tiếp -->
+      <div class="contact-info">
+        <!-- Email Chính Xác -->
+        <div class="contact-item">
+          <div class="contact-icon-box">📧</div>
+          <div>
+            <div class="contact-label">Email trực tiếp</div>
+            <div class="contact-val">nhatx5xxx@gmail.com</div>
+          </div>
+          <button class="contact-copy-btn copy-btn" data-copy="nhatx5xxx@gmail.com" title="Sao chép email">
+            📋
+          </button>
+        </div>
+
+        <!-- Phone / Zalo -->
+        <div class="contact-item">
+          <div class="contact-icon-box">📱</div>
+          <div>
+            <div class="contact-label">Điện thoại / Zalo</div>
+            <div class="contact-val">+84 987 654 321</div>
+          </div>
+          <button class="contact-copy-btn copy-btn" data-copy="+84987654321" title="Sao chép số điện thoại">
+            📋
+          </button>
+        </div>
+
+        <!-- Telegram -->
+        <div class="contact-item">
+          <div class="contact-icon-box">✈️</div>
+          <div>
+            <div class="contact-label">Telegram</div>
+            <div class="contact-val">@vannhat_dev</div>
+          </div>
+          <button class="contact-copy-btn copy-btn" data-copy="@vannhat_dev" title="Sao chép username">
+            📋
+          </button>
+        </div>
+
+        <!-- Địa điểm làm việc -->
+        <div class="contact-item">
+          <div class="contact-icon-box">📍</div>
+          <div>
+            <div class="contact-label">Địa điểm làm việc</div>
+            <div class="contact-val">Hồ Chí Minh / Hà Nội (Sẵn sàng Remote toàn cầu)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cột phải: Form gửi tin nhắn nhanh -->
+      <div class="contact-form-card">
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="contact-name" data-i18n="formName">Họ và tên của bạn</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="Ví dụ: Nguyễn Văn An" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email" data-i18n="formEmail">Địa chỉ Email</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-subject" data-i18n="formSubject">Chủ đề / Lĩnh vực hợp tác</label>
+            <input type="text" id="contact-subject" class="form-input" placeholder="Ví dụ: Hợp tác phát triển SaaS / Tư vấn kiến trúc Cloud" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message" data-i18n="formMsg">Nội dung tin nhắn</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="Mô tả ngắn gọn về nhu cầu hoặc dự án của bạn..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="formSubmit">
+            Gửi tin nhắn ngay ⚡
+          </button>
+
+          <div id="form-status-msg" class="form-msg-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: modals.html -->
+<!-- ==========================================================================
+     MODALS SECTION
+     Modal xem chi tiết dự án & Modal Curriculum Vitae (CV) cá nhân
+     ========================================================================== -->
+
+<!-- MODAL: CHI TIẾT DỰ ÁN & KIẾN TRÚC HỆ THỐNG -->
+<div class="modal-backdrop" id="project-modal">
+  <div class="modal-container">
+    <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+    <div class="modal-body" id="project-modal-body">
+      <!-- Nội dung được nạp tự động qua main.js khi người dùng click vào dự án -->
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: HỒ SƠ ỨNG TUYỂN / BẢN XEM TRƯỚC CV -->
+<div class="modal-backdrop" id="cv-modal">
+  <div class="modal-container" style="max-width: 840px;">
+    <button class="modal-close-btn" id="cv-modal-close-btn" aria-label="Close CV modal">✕</button>
+    <div class="modal-body">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 1.25rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.8rem; color: #fff;">Nguyễn Văn Nhất</h2>
+          <div style="color: var(--accent-cyan); font-family: var(--font-mono); font-weight: 600;">Senior Full-Stack Engineer & Cloud Solutions Architect</div>
+          <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">Email: nhatx5xxx@gmail.com | Phone: +84 987 654 321</div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button onclick="window.print()" class="btn btn-secondary btn-sm">
+            🖨️ In / Xuất PDF
+          </button>
+          <a href="mailto:nhatx5xxx@gmail.com" class="btn btn-primary btn-sm">
+            ✉️ Tuyển dụng
+          </a>
+        </div>
+      </div>
+
+      <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">// Tóm tắt năng lực (Executive Summary)</h4>
+          <p>
+            Kỹ sư phần mềm cao cấp với hơn 5 năm kinh nghiệm chuyên sâu trong việc thiết kế kiến trúc phân tán chịu tải lớn, xây dựng web application hiệu năng cao với React/Next.js và tối ưu hóa backend vi dịch vụ với Golang, Node.js và hạ tầng Cloud AWS/Kubernetes. Có năng lực đã được chứng minh trong việc lãnh đạo kỹ thuật và áp dụng GenAI vào sản phẩm thực tế.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">// Kỹ năng chuyên môn cốt lõi</h4>
+          <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+            <li><strong>Frontend:</strong> React 19, Next.js 14, TypeScript, Vue 3, Tailwind CSS, Responsive Design, State Management (Zustand, Redux).</li>
+            <li><strong>Backend:</strong> Golang, Node.js (NestJS, Express), Python (FastAPI), RESTful API, gRPC, GraphQL.</li>
+            <li><strong>Database & Storage:</strong> PostgreSQL, Redis, MongoDB, ClickHouse, TimescaleDB, ElasticSearch.</li>
+            <li><strong>Cloud & DevOps:</strong> Docker, Kubernetes, AWS (ECS, Lambda, RDS, S3), CI/CD (GitHub Actions), Terraform.</li>
+            <li><strong>AI Engineering:</strong> RAG Architecture, LangChain, Vector Databases (Pinecone, pgvector), LLM Fine-tuning & Prompt Engineering.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">// Học vấn & Chứng chỉ Quốc tế</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+            <div>
+              <strong>Trường Đại học CMC (CMC University)</strong> - Cử nhân Công nghệ Thông tin (<span style="color: var(--accent-emerald); font-weight: 700;">Tốt nghiệp loại Giỏi</span>)
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.88rem;">
+              Chứng chỉ: AWS Certified Solutions Architect - Associate | CKAD (Certified Kubernetes Application Developer)
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Back to top button -->
-  <button class="back-to-top" id="back-to-top" title="Lên đầu trang" aria-label="Scroll back to top">
-    ▲
-  </button>
 
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-copy">
-        © 2026 <strong>Nguyễn Văn Nhất</strong>. Thiết kế & Lập trình với hiệu năng tối ưu 60fps.
-      </div>
-
-      <div class="footer-socials">
-        <!-- GitHub -->
-        <a href="https://github.com/vannhat" target="_blank" class="social-link" title="GitHub">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-          </svg>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/vannhat" target="_blank" class="social-link" title="LinkedIn">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-          </svg>
-        </a>
-
-        <!-- Telegram -->
-        <a href="https://t.me/vannhat_dev" target="_blank" class="social-link" title="Telegram">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.536-.197 1.006.128.832.942z" />
-          </svg>
-        </a>
-      </div>
+  <!-- SECTION: footer.html -->
+<!-- ==========================================================================
+     FOOTER SECTION
+     Bản quyền tác giả & các liên kết mạng xã hội
+     ========================================================================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-copy">
+      © 2026 <strong>Nguyễn Văn Nhất</strong>. Thiết kế & Lập trình với hiệu năng tối ưu 60fps.
     </div>
-  </footer>
+
+    <div class="footer-socials">
+      <!-- GitHub -->
+      <a href="https://github.com/nguyenvannhat24" target="_blank" class="social-link" title="GitHub">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/vannhat" target="_blank" class="social-link" title="LinkedIn">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://t.me/vannhat_dev" target="_blank" class="social-link" title="Telegram">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.536-.197 1.006.128.832.942z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Nút quay lại đầu trang -->
+<button class="back-to-top" id="back-to-top" title="Lên đầu trang" aria-label="Scroll back to top">
+  ▲
+</button>
+
+
 
   <!-- Scripts -->
   <script src="js/audio.js"></script>
   <script src="js/terminal.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
